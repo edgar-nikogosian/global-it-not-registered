@@ -1,0 +1,832 @@
+*{
+	margin: 0;
+	padding:0;
+}
+:root{
+	font-size: 1.2vw;
+}
+@font-face {
+  font-family: 'Arial Armenian';
+  src:url('./fonts/ArialArmenian.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'ArialArmST';
+  src:url('./fonts/ArialArmST.ttf') format('truetype');
+}
+body{
+	height: 100%;
+	width: 100vw;
+	box-sizing: border-box;
+ font-family: 'Arial Armenian';
+overflow-x: hidden;
+
+}
+a{
+	text-decoration: none;
+}
+.header{
+
+	background: linear-gradient(186.35deg, #26065A 0.49%, #03225D 33.17%, #590061 70.61%, #03008B 101.31%);
+	display: flex;
+	position: relative;
+	width: 100vw;
+	height: 4rem;
+box-shadow: 15px 15px 25px rgba(66, 0, 109, 0.2);
+
+z-index: 4;
+	align-items:center;
+	justify-content: space-between;
+}
+.header-sections{
+	color: #fff;
+	display: flex;
+	font-size: .7rem;
+	margin-right: 2rem;
+	align-items: center;
+	 flex-wrap: nowrap;
+}
+.header-logo{
+	height: 4rem;
+	width: 7rem;
+	margin-left: 1.5rem;
+
+}
+
+.header-logo-link{
+	width: 100%;
+	height: 100%
+}
+.header-logo-link>img{
+	width: 100%;
+	height: 100%;
+}
+
+
+.header-other-sections{
+	display: flex;
+	align-items: center;
+}
+.header-user{
+	color: #fff;
+	font-size: 1.5rem;
+	margin-left: 1rem;
+
+}
+.header-theme-btn{
+	position: relative;
+	width: 3rem;
+	height: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 1rem;
+}
+.theme-main-btn{
+	background: #fff;
+	border-radius: 1rem;
+	width: 2.8rem;
+	height: 1.3rem;
+	display: flex;
+	align-items: center;
+	font-size: .8rem;
+	z-index: 3;
+	transition: .4s;
+}
+.fa-moon-o{
+	position: absolute;
+	left: .4rem;
+	z-index: 3;
+	color: #000;
+}
+.fa-sun-o{
+	position: absolute;
+	right: .4rem;
+	z-index: 3
+}
+.theme-round-btn{
+	position: absolute;
+	transition: .3s;
+	height: 1.45rem;
+	width: 1.45rem;
+	border-radius: 50%;
+	background: #0A0935;
+	z-index: 4;
+	right: 0;
+	cursor:pointer;
+}
+.header-section{
+	position: relative;
+	margin-left: 1.7rem;
+    cursor: pointer;
+    color: #ffffff;
+    height: 100%;
+    line-height: 1.5rem;
+    font-weight: bold;
+}
+.header-section:hover{
+	border-bottom: .05rem solid #fff;
+}
+.header-lang-change{
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	position: relative;
+	height: 1.6rem;
+	margin-left: 1rem;
+}
+.flag{
+	 display: flex;
+
+    width: 1.6rem;
+
+    height: 1.6rem;
+}
+.lang-btn{
+	position: relative;
+	margin-left: .3rem;
+	color: #fff;
+	cursor: pointer;
+}
+.lang-wrapper{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+    width: 1.6rem;
+    overflow: hidden;
+    height: 1.6rem;
+    transition: .5s;
+}
+.flag-item{
+	width: 1.4rem;
+	height: 1.4rem;
+	margin-bottom: .5rem;
+}
+#lang-rotate{
+	transition: .5s;
+}
+.flag-item>img{
+	width: 100%;
+	height: 100%;
+}
+.header-search{
+	margin-left: 2rem;
+}
+.header-section-services{
+	overflow: hidden;
+    position: relative;
+
+}
+.header-section-main > a{
+	color: #fff;
+}
+.services-wrap-slide {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #cacaca;
+    position: absolute;
+    margin-top: .1rem;
+    opacity: 0;
+    width: 25rem;
+    background: #fff;
+    color: #000;
+    font-size: .7rem;
+    /* height: 15rem; */
+    justify-content: space-around;
+    transition: .5s;
+    z-index: 2;
+}
+.header-section-services:hover{
+	overflow: visible;
+}
+.header-section-services:hover .services-wrap-slide{
+	opacity: 1;
+}
+.wrap-slide-text{
+	padding-top: .2rem;
+	z-index: 4;
+	color: #000;
+}
+.un-border{
+	border:none !important;
+}
+.wrap-slide-text>p{
+	margin-left: .5rem;
+	margin-right: .5rem;
+	border-bottom: 1px solid #cacaca;
+}
+.wrap-slide-text:hover{
+	background: #adadad;
+}
+
+.header-section-faculties{
+		overflow: hidden;
+    position: relative;
+}
+.header-section-faculties > i {
+    padding-left: .8rem;
+}
+.faculties-wrap-slide {
+    display: flex;
+	flex-direction: column;
+	border:1px solid #cacaca;
+	position: absolute;
+	margin-top: .1rem;
+	opacity: 0;
+	width: 15rem;
+	background: #fff;
+	color: #000;
+	font-size: .7rem;
+	/*height: 7rem;*/
+/*	justify-content: space-around;
+	transition: .5s;*/
+
+	z-index: 4;
+}
+.header-section-faculties:hover{
+	overflow: visible;
+}
+.header-section-faculties:hover .faculties-wrap-slide{
+	opacity: 1;
+}*/
+
+.header-section-faculties > i {
+    padding-left: .8rem;
+
+}
+.header-section-services > i {
+    padding-left: .8rem;
+}
+
+.search-panel{
+	color: #ffffff;
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	border-radius: 60px;
+		width: 1.4rem;
+transition: .9s;
+
+	display: flex;
+	height: 2rem;
+}
+#search-field{
+	width: 0;
+	border:none;
+	border-radius: 60px;
+	opacity: 0;
+	height: 1.4rem;
+	transition: .9s;
+	outline: none;
+	color: #797979;
+	font-size:.7rem;
+	height: 2rem;
+}
+#search-field:not(:focus){
+	width: 0;
+	border:none;
+	border-radius: 60px;
+	opacity: 0;
+	height: 1.4rem;
+	transition: .9s;
+	outline: none;
+	color: #797979;
+	font-size:.7rem;
+	height: 2rem;
+}
+.header-search{
+	position: relative;
+	width: 1.5rem;
+	height: 2rem;
+	display: flex;
+	align-items: center;
+}
+
+#search-ico{
+height: 2rem;
+	    z-index: 5;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.search-input{
+	z-index: 3;
+	position: absolute;
+	width: 0;
+	opacity: 0;
+}
+
+.footer{
+	width: 100vw;
+	background: linear-gradient(136.18deg, #0E0927 0%, #200138 100%);
+	color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+
+}
+.footer-inner{
+	width: 100%;
+	position: relative;
+	font-family: 'ArialArmST';
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 2rem;
+	z-index: 2;
+}
+.footer-trainings,
+.footer-map,
+.footer-contacts
+{	width:  20%;
+	font-size: .9rem;
+	margin-right: 1rem;
+}
+
+.footer-logo-heading{
+	font-family: 'Montserrat', sans-serif;
+	color: #ffffff;
+	font-size: 1.7rem;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.logo-heading-purp{
+	color: #442696;
+	padding-left: .25rem;
+}
+.global-it-info{
+	font-size: .8rem;
+
+	width: 22%;
+
+	margin: 2rem;
+}
+.global-it-text{
+	text-align: center;
+}
+.footer-global-it-logo{
+	display: flex;
+	align-items: center;
+	margin-bottom: 1rem;
+
+}
+.footer-global-it-logo > img{
+	margin-right: .5rem;
+}
+ .footer  ul{
+ 	list-style-type: none;
+ 	text-align: center;
+}
+.footer  ul>li{
+ 	margin-bottom: .9rem;
+}
+.footer-social-media{
+	display: flex;
+	height: 2rem;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1rem;
+}
+.footer-social-media > a > img{
+	width: 1.5rem;
+	height: 1.5rem;
+	margin-right: 1.5rem;
+}
+
+.footer-global-heading{
+	margin-top: 2rem;
+	font-size: 1.45rem;
+	font-weight: bold;
+	line-height: 134.8%;
+	text-align: center;
+	letter-spacing: 0.055rem;
+	margin-bottom: 1rem;
+}
+.footer-no-margin>li{
+	margin-bottom: .3rem !important;
+}
+
+.footer-copyright{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.copyright-wrapper{
+	padding-top: 1rem;
+	width: 80%;
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+.copyright-wrapper  > p{
+	margin: 0 auto;
+	text-align: center;
+	width: 80%;
+	margin-bottom: 1.2rem;
+}
+li > a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.main-container{
+	width: 100%;
+
+}
+
+.dark-mode{
+	background: #0B0316;
+	color: #fff;
+}
+
+.fakultet-global-heading-dark {
+	color: #fff !important;
+}
+
+.fakultet_title
+{
+    width: 80%;
+    margin: 0 auto 2rem;
+}
+.fakultet_registration
+{
+    width: 80%;
+    margin: 2rem auto;
+}
+.fakultet_registration-wrapper{
+	height: 7rem;
+    display: flex;
+    align-items: center;
+}
+.fakultet_registration-dark{
+	background: #220E3E;
+	color: #fff !important;
+}
+
+.fakultet_title h1
+{
+    /* font-family: ; */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #190650;
+    margin-top: 2rem;
+}
+
+.fakultet_registration
+{
+    display: flex;
+    align-items: center;
+}
+.fakultet_registration_text
+{
+    /* font-family: ; */
+    font-style: normal;
+    font-weight: bold;
+    font-size:1.2rem;
+    color: #190650;
+}
+.fakultet_registration_name
+{
+    width:15rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+		background: gray;
+    border-radius: 10rem;
+    margin-left: 1.5rem;
+}
+.fakultet_registration_name > input
+{
+    width: 95%;
+    height: 94%;
+    border: none;
+    border-radius: 10rem;
+    padding: 0 .5rem 0 .5rem;
+    outline: none;
+		font-size: .7rem;
+}
+
+.fakultet_registration_phone
+{
+    width:15rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: gray;
+    border-radius: 10rem;
+    margin-left: 1.5rem;
+}
+.fakultet_registration_phone input
+{
+    width: 95%;
+    height: 94%;
+    border: none;
+    padding: 0 .5rem 0 .5rem;
+    border-radius: 10rem;
+		font-size: .7rem;
+    outline: none;
+}
+.fakultet_registration_button button
+{
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 10rem;
+    border: none;
+    color: white;
+    font-size: .9rem;
+    margin-left: 1.5rem;
+    background: linear-gradient(91.52deg, #3D04B7 3%, #235BEB 99.55%);
+    transition: 0.5s ease;
+		cursor: pointer;
+}
+.fakultet_registration_button button:hover {
+    color: #ffffff;
+    /* font-size: 1.3rem; */
+    background: linear-gradient(91.52deg, #22006b 3%, #0c51ff 99.55%);
+}
+
+.fakultet_choice_menu
+{
+    display: flex;
+    position: relative;
+}
+.fakultet_choice_menu_c1_button
+{
+    width: 7rem;
+    height: 2rem;
+    border: none;
+    background: none;
+    outline: none;
+		font-weight: bold;
+    cursor: pointer;
+		font-size: .7rem;
+}
+.fakultet_choice_menu_c2_button
+{
+	font-weight: bold;
+	font-size: .7rem;
+    width: 15rem;
+    height: 2rem;
+    border: none;
+    background: none;
+    opacity: 0.4;
+    outline: none;
+    cursor: pointer;
+}
+.fakultet_choice_menu_c1_hr {
+    width: 7rem;
+    height:0.3rem;
+    background-color:#430099;
+    position: absolute;
+    bottom: -0.1rem;
+    display: block;
+    cursor: pointer;
+}
+.fakultet_choice_menu_c2_hr
+{
+    width: 9rem;
+    height:0.3rem;
+    background-color:#430099;
+    margin-left: 3rem;
+    position: absolute;
+    bottom: -0.1rem;
+    display: none;
+}
+.fakultet_choice_menu
+{
+    width: 80%;
+    margin: 0 auto;
+}
+.fakultet_fakultets_about
+{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.fakultet_number
+{
+    width: 100%;
+    display: flex;
+    border-top:1px solid rgb(82, 82, 82) ;
+    border-bottom:1px solid rgb(82, 82, 82) ;
+}
+.fakultet_number_1_photo
+{
+    width: 35rem;
+    height: 20rem;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    background: linear-gradient(121.58deg, #FD754A 28.12%, #FFD02B 100%);
+}
+.fakultet_number_2_photo
+{
+    width: 35rem;
+    height: 20rem;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    background: linear-gradient(-90deg, #00C880 0%, #009E78 36.66%, #005843 100%);
+}
+.fakultet_number_3_photo
+{
+    width: 35rem;
+    height: 20rem;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    background: linear-gradient(121.58deg, #4441F6 28.12%, #AA77FF 100%);
+}
+.fakultet_number_photo_img1{
+    width: 68%;
+    height:71%;
+    position: absolute;
+    right: 1rem;
+    top: 3rem;
+}
+.fakultet_number_photo_img2{
+    width: 2rem;
+    height:3rem;
+    position: absolute;
+    top: 1rem;
+    right:1rem;
+}
+.fakultet_number_photo_img3{
+    width: 5rem;
+    height: 6rem;
+    position: absolute;
+    top: 0;
+    right: -0.5rem;
+}
+.fakultet_number_information
+{
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+.fakultet_number_information_title
+{
+    display: flex;
+}
+
+.fakultet_number_information_title p
+{
+    /* font-family: ; */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+.fakultet_number_information_title2
+{
+    margin-left: 1rem;
+    color: #FD7849;
+}
+.fakultet_number_information_title4
+{
+    margin-left: 1rem;
+    color: #4441F6;
+}
+.fakultet_number_information_text p
+{
+    /* font-family: ; */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    width: 50rem;
+    margin-top: 1.5rem;
+}
+.fakultet_number_information_about_kurs
+{
+    display: flex;
+    margin-top: 1.5rem;
+}
+.fakultet_number_information_aboutkurs_number_of_courses
+{
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    /* font-family: ; */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+.fakultet_number_information_aboutkurs_number_of_students
+{
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    /* font-family: ; */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+.fakultet_number_information_aboutkurs_professions
+{
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    /* font-family: ; */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+.fakultet_number_information_buttons
+{
+    margin-top:3rem;
+}
+.fakultet_number_information_button1
+{
+    width: 13rem;
+    height: 3rem;
+    border: none;
+    outline: none;
+    background: linear-gradient(90deg, #FD7949 0%, #FFCB2D 100%);
+    border-radius: 10rem;
+    color: #ffffff;
+    /* font-family: ; */
+    font-style: normal;
+    font-weight: bold;
+    margin-right: 2rem;
+    transition: 0.5s ease;
+		cursor: pointer;
+}
+.fakultet_number_information_button1:hover
+{
+    background: linear-gradient(90deg, #ff4400 0%, #f7b900 100%);
+    /* font-size: 1rem ; */
+}
+.fakultet_number_information_button2
+{
+	cursor: pointer;
+    width: 13rem;
+    height: 3rem;
+    border: none;
+    outline: none;
+    background: linear-gradient(90deg, #011D63 0%, #1B87B5 100%);
+    border-radius: 10rem;
+    color: #ffffff;
+    /* font-family: ; */
+    font-style: normal;
+    font-weight: bold;
+    transition: 0.5s  ease;
+}
+.fakultet_number_information_button2:hover
+{
+    background: linear-gradient(90deg, #001446 0%, #008fcc 100%);
+    /* font-size: 1rem ; */
+}
+.fakultet_number_information_button3
+{
+    width: 13rem;
+    height: 3rem;
+    border: none;
+    outline: none;
+    border-radius: 10rem;
+    color: #ffffff;
+    /* font-family: ; */
+    font-style: normal;
+    font-weight: bold;
+    background: linear-gradient(90deg, #00C580 0%, #00A87B 100%);
+    margin-right: 2rem;
+    transition: 0.5s ease;
+		cursor: pointer;
+}
+.fakultet_number_information_button3:hover
+{
+    background: linear-gradient(90deg, #00a36a 0%, #27bd95 100%);
+    /* font-size: 1rem ; */
+}
+.fakultet_number_information_button4{
+    width: 13rem;
+    height: 3rem;
+    border: none;
+    outline: none;
+    border-radius: 10rem;
+    color: #ffffff;
+		cursor: pointer;
+    /* font-family: ; */
+    font-style: normal;
+    font-weight: bold;
+    background: linear-gradient(90deg, #4441F6 0%, #A876FF 100%);
+    margin-right: 2rem;
+    transition: 0.5s ease;
+}
+.fakultet_number_information_button4:hover
+{
+    background: linear-gradient(90deg, #1a17f5 0%, #5e32aa 100%);
+    /* font-size: 1rem ; */
+}
+.fakultet_number_information_title3
+{
+    margin-left: 1rem;
+    color: #00A87B;
+}
+
+.fakultet_all_courses
+{
+    height: 100vh;
+    background-color: yellow;
+    margin-top: 1rem;
+    display: none;
+}
